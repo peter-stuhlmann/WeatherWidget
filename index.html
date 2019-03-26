@@ -9,27 +9,72 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body> 
+<body>
 
     <div class='widget'>
-        <div class='weatherdata_1'>
-            <div class='icon'></div>
-            <div class='weatherdata_infos'>
-                <span class='date'></span>
-                <span class='time'></span>
-                <span class='city'></span>
+        <div id="weekday-main">
+            <span class='city'></span><br>
+            <span>WEATHER</span>
+            <div class='icon'>
+                <canvas id="clear-day" width="128" height="128"></canvas>
+                <canvas id="clear-night" width="128" height="128"></canvas>
+                <canvas id="partly-cloudy-day" width="128" height="128"></canvas>
+                <canvas id="partly-cloudy-night" width="128" height="128"></canvas>
+                <canvas id="cloudy" width="128" height="128"></canvas>
+                <canvas id="rain" width="128" height="128"></canvas>
+                <canvas id="sleet" width="128" height="128"></canvas>
+                <canvas id="snow" width="128" height="128"></canvas>
+                <canvas id="wind" width="128" height="128"></canvas>
+                <canvas id="fog" width="128" height="128"></canvas>
             </div>
-        </div>
-        <div class='weatherdata_2'>
             <div class='temperature'></div>
-            <div class='weatherdata_infos'>
-                <span class='description'></span>
-                <span class='humidity'></span>
-                <span class='windspeed'></span>
-            </div>
+        </div>
+        <div class="weekday">
+            <span id="day1-weekday"></span><br>
+            <span id="day1-icon"></span><br>
+            <span id="day1-temperature-min"></span><br>
+            <span id="day1-temperature-max"></span>
+        </div>
+        <div class="weekday">
+            <span id="day2-weekday"></span><br>
+            <span id="day2-icon"></span><br>
+            <span id="day2-temperature-min"></span><br>
+            <span id="day2-temperature-max"></span>
+        </div>
+        <div class="weekday">
+            <span id="day3-weekday"></span><br>
+            <span id="day3-icon"></span><br>
+            <span id="day3-temperature-min"></span><br>
+            <span id="day3-temperature-max"></span>
+        </div>
+        <div class="weekday">
+            <span id="day4-weekday"></span><br>
+            <span id="day4-icon"></span><br>
+            <span id="day4-temperature-min"></span><br>
+            <span id="day4-temperature-max"></span>
+        </div>
+        <div class="weekday">
+            <span id="day5-weekday"></span><br>
+            <span id="day5-icon"></span><br>
+            <span id="day5-temperature-min"></span><br>
+            <span id="day5-temperature-max"></span>
+        </div>
+        <div class="weekday">
+            <span id="day6-weekday"></span><br>
+            <span id="day6-icon"></span><br>
+            <span id="day6-temperature-min"></span><br>
+            <span id="day6-temperature-max"></span>
+        </div>
+        <div class="weekday">
+            <span id="day7-weekday"></span><br>
+            <span id="day7-icon"></span><br>
+            <span id="day7-temperature-min"></span><br>
+            <span id="day7-temperature-max"></span>
         </div>
     </div>
 
+    <script src="assets/js/skycons.js"></script>
+    <script src="assets/js/moment.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
