@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  box-sizing: border-box; }
+
+main {
+  width: 100%;
+  max-width: 1170px;
+  margin: 30px auto;
+  font-family: "Open Sans", sans-serif; }
+  main .widget {
+    background-color: #1f567c;
+    color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap; }
+    main .widget canvas {
+      display: none; }
+    main .widget img {
+      margin-bottom: -15px; }
+    main .widget .temperatures {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      padding: 0 calc(15px / 2); }
+      main .widget .temperatures span {
+        flex: 0 0 49%; }
+        main .widget .temperatures span:last-child {
+          text-align: right; }
+    main .widget #weekday-main {
+      flex: 0 0 34%;
+      padding: 0 calc(15px * 2);
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      align-items: center; }
+      main .widget #weekday-main div {
+        flex: 0 0 25%; }
+        main .widget #weekday-main div:last-child {
+          text-align: right;
+          font-size: 3em; }
+    main .widget .weekday {
+      padding: 15px;
+      background-color: #2a74a7;
+      box-sizing: border-box;
+      transition: 0.35s; }
+      main .widget .weekday div:first-child {
+        text-align: center; }
+      main .widget .weekday:last-child {
+        border-radius: 0 5px 5px 0; }
+      main .widget .weekday:hover {
+        background-color: #1f567c; }
+
+/*# sourceMappingURL=style.css.map */

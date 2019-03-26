@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box
+}
+
+main {
+    width: 100%;
+    max-width: $desktop;
+    margin: 30px auto;
+    font-family: $primaryFont;
+
+    .widget {
+        background-color: $secondaryColor;
+        color: $primaryColor;
+        border-radius: $borderRadius;
+        box-sizing: border-box;
+        font-size: 16px;
+        width: 100%;
+        max-width: $desktop;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+
+        canvas {
+            display: none
+        }
+        
+        img {
+            margin-bottom: - $margin;
+        }
+
+        .temperatures {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            padding: 0 calc(#{$padding} / 2);
+
+            span {
+                flex: 0 0 49%;
+
+                &:last-child {
+                    text-align: right
+                }
+            }
+        }
+
+        #weekday-main {
+            flex: 0 0 34%;
+            padding: 0 calc(#{$padding} * 2);
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            align-items: center;
+
+            div {
+                flex: 0 0 25%;
+
+                &:last-child {
+                    text-align: right;
+                    font-size: 3em
+                }
+            }
+        }
+
+        .weekday {
+            padding: $padding;
+            background-color: $tertiaryColor;
+            box-sizing: border-box;
+            transition: 0.35s;
+
+            div:first-child {
+                text-align: center
+            }
+
+            &:last-child {
+                border-radius: 0 $borderRadius $borderRadius 0
+            }
+
+            &:hover {
+                background-color: $secondaryColor
+            }
+        }
+    }
+}
