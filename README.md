@@ -6,6 +6,8 @@ Preview: [peter-stuhlmann-webentwicklung.de/weather](https://peter-stuhlmann-web
 
 ![Screenshot](assets/img/screenshot-desktop.png)
 
+Dark Sky API Documentation: [https://darksky.net/dev/docs](https://darksky.net/dev/docs)
+
 ---
 
 [&copy; Peter R. Stuhlmann Webentwicklung](https://peter-stuhlmann-webentwicklung.de)
