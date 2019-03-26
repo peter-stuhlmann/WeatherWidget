@@ -19,7 +19,7 @@ icons.play();
 
 function weatherWidget_fetch() {
 
-    fetch(`https://api.darksky.net/forecast/d4dea35e4775428f2ece010ca5c01504/52.520008,13.404954`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/d4dea35e4775428f2ece010ca5c01504/52.520008,13.404954`)
         .then(
             response => response.json()
         )
